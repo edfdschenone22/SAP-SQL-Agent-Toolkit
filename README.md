@@ -19,7 +19,7 @@ Follow these steps to set up the toolkit:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/edfdschenone22/AP-Agent-Toolkit.git
+   git clone https://github.com/edfdschenone22/SAP-SQL-Agent-Toolkit.git
    cd AP-Agent-Toolkit
    ```
 
