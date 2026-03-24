@@ -7,6 +7,14 @@ The AP Agent Toolkit is designed to streamline the creation of agentic workflows
 1. Install **Visual Studio Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 2. Install the **Cline Extension** from the VS Code Marketplace.
 
+## Configuring Cline Models
+1. Open **Cline Settings** (gear icon in the extension).
+2. Set the **API Provider** to **GitHub Models**.
+3. Configure the models:
+   - **Plan Mode Model**: Select **Gemini-3** for high-context reasoning.
+   - **Act Mode Model**: Select **GPT-4o** for reliable code generation.
+4. Save your settings.
+
 ## Architecture
 The toolkit is organized into two main parts:
 - **Core Toolkit (`src/`)**: Contains reusable MCP servers (`sap-hana`, `sql-dev`, `sql-prd`) and pipeline templates.
