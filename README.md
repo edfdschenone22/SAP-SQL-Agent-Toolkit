@@ -1,11 +1,15 @@
-# SAP Agent Toolkit
+# AP Agent Toolkit
 
 ## Introduction
-The SAP Agent Toolkit is designed to streamline the creation of agentic workflows that integrate SAP and SQL Server data pipelines. It provides a modular structure for reusable components and specific project implementations, making it easy to share and extend.
+The AP Agent Toolkit is designed to streamline the creation of agentic workflows that integrate SAP and SQL Server data pipelines. It provides a modular structure for reusable components and specific project implementations, making it easy to share and extend.
+
+## Prerequisites
+1. Install **Visual Studio Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+2. Install the **Cline Extension** from the VS Code Marketplace.
 
 ## Architecture
 The toolkit is organized into two main parts:
-- **Core Toolkit (`src/`)**: Contains reusable MCP servers (`sap-hana`, `sql-dev`) and pipeline templates.
+- **Core Toolkit (`src/`)**: Contains reusable MCP servers (`sap-hana`, `sql-dev`, `sql-prd`) and pipeline templates.
 - **Projects (`projects/`)**: Houses specific implementations, such as dashboards or reports, built using the core toolkit.
 
 This separation ensures that the core logic remains clean and reusable while allowing flexibility for project-specific customizations.
@@ -15,8 +19,8 @@ Follow these steps to set up the toolkit:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/edfdschenone22/AP-Agent-Toolkit.git
+   cd AP-Agent-Toolkit
    ```
 
 2. **Set Up a Virtual Environment** (Recommended):
@@ -36,9 +40,9 @@ Follow these steps to set up the toolkit:
 
 ## Usage Guide
 ### Using MCP Servers
-Once installed, the MCP servers (`sap-hana` and `sql-dev`) are available in Cline. You can:
+Once installed, the MCP servers (`sap-hana`, `sql-dev`, and `sql-prd`) are available in Cline. You can:
 - Query SAP data using `sap-hana`.
-- Read and write to SQL Server using `sql-dev`.
+- Read and write to SQL Server using `sql-dev` and `sql-prd`.
 
 ### Building New Pipelines
 To create a new project:
@@ -52,7 +56,11 @@ To create a new project:
 - **Use Case**: Extract data for analysis or reporting.
 
 ### `sql-dev`
-- **Purpose**: Read and write access to SQL Server.
+- **Purpose**: Read and write access to SQL Server (Development).
+- **Use Case**: Automate data transformations, updates, and reporting.
+
+### `sql-prd`
+- **Purpose**: Read and write access to SQL Server (Production).
 - **Use Case**: Automate data transformations, updates, and reporting.
 
 ### Pipeline Templates
