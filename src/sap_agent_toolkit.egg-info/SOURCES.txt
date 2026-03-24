@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/sap_agent_toolkit.egg-info/PKG-INFO
+src/sap_agent_toolkit.egg-info/SOURCES.txt
+src/sap_agent_toolkit.egg-info/dependency_links.txt
+src/sap_agent_toolkit.egg-info/requires.txt
+src/sap_agent_toolkit.egg-info/top_level.txt
